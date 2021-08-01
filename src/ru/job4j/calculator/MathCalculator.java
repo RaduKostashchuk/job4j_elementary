@@ -8,7 +8,18 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
+    public static double sumDiffQuot(double first, double second) {
+        return diff(first, second) + quot(first, second);
+    }
+
+    public static double sumOverall(double first, double second) {
+        return sum(first, second) + multiply(first, second)
+        + diff(first, second) + quot(first, second);
+    }
+
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
+        System.out.println("Результат расчета равен: " + sumDiffQuot(10, 20));
+        System.out.println("Результат расчета равен: " + sumOverall(10, 20));
     }
 }
