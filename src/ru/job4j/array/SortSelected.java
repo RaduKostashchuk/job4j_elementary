@@ -11,8 +11,7 @@ public class SortSelected {
     }
 
     public static int[] swap(int[] array, int source, int dest) {
-        int temp;
-        temp = array[dest];
+        int temp = array[dest];
         array[dest] = array[source];
         array[source] = temp;
         return array;
